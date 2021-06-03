@@ -33,6 +33,7 @@ Route::get('/katalog', [PageController::class, 'carousel']);
 Route::get('/login', [PageController::class, 'login']);
 Route::get('/beranda', [PageController::class, 'home']);
 Route::get('/dashboard', [PageController::class, 'index']);
+Route::get('/quiz', [PageController::class, 'fQuiz']);
 
 Route::resource('/motor', (MotorController::class))->only(['index', 'create']);
 Route::get('/motor/ubah', [MotorController::class, 'edit'])->name('motor.edit');

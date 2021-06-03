@@ -43,4 +43,8 @@ class PageController extends Controller
     {
         return view('login');
     }
+    public function fQuiz()
+    {
+        return view('quiz');
+    }
 }

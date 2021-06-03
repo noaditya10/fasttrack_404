@@ -13,7 +13,7 @@
     </style>
 </head>
 
-<body>
+<body style="min-height: 500px">
     <nav class="navbar navbar-expand bg-dark">
         <ul class="navbar-nav">
             <li>
@@ -33,9 +33,11 @@
             </li>
         </ul>
     </nav>
+    <div class="container" style="min-height: 500px">
+        {{-- Isi dari halaman --}}
+        @yield('isi_halaman')
+    </div>
 
-    {{-- Isi dari halaman --}}
-    @yield('isi_halaman')
 
     {{-- footer --}}
     <footer class="footer bg-dark text-white" style="height: 200px; padding: 50px;">
