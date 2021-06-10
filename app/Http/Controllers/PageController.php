@@ -27,7 +27,7 @@ class PageController extends Controller
 
     public function fyamaha()
     {
-        return view('yamaha');
+        return view('pyamaha');
     }
 
     public function home()

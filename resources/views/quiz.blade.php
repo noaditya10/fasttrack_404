@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="row bg-primary">
+    {{-- <div class="row bg-primary">
         <div class="col-3 bg-success"></div>
         <div class="col-3 bg-warning"></div>
         <div class="col-3 bg-danger">
@@ -35,7 +35,38 @@
         <div class="col bg-light"></div>
         <div class="col bg-primary">
         </div>
+    </div> --}}
+
+    <div class="oval">
+        <div class="persegi"></div>
+        <div class="persegi"></div>
+        <div class="persegi"></div>
     </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row A">
+        <div class="col">
+            <div class="row B"></div>
+            <div class="row B"></div>
+            <div class="row B"></div>
+        </div>
+        <div class="col">
+            <div class="row B"></div>
+            <div class="row B"></div>
+            <div class="row B"></div>
+        </div>
+        <div class="col">
+            <div class="row B"></div>
+            <div class="row B"></div>
+            <div class="row B"></div>
+        </div>
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
