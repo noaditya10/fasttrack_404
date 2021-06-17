@@ -36,11 +36,6 @@ Route::get('/beranda', [PageController::class, 'home']);
 Route::get('/dashboard', [PageController::class, 'index']);
 Route::get('/quiz', [PageController::class, 'fQuiz']);
 
-Route::resource('/siswa', (SiswaController::class));
+// Route::get('/motor/ubah', [MotorController::class, 'edit'])->name('motor.edit');
 
-Route::get('/motor/ubah', [MotorController::class, 'edit'])->name('motor.edit');
-
-Route::get('/siswa', [SiswaController::class, 'index']);
-Route::post('/siswa', [SiswaController::class, 'store']);
-Route::get('/siswa/create', [SiswaController::class, 'create']);
-// udah males duluan kalo gak pakai resource
+Route::resource('/motor', (MotorController::class));
