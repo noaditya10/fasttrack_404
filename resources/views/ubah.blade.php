@@ -7,9 +7,9 @@
             <h3>Ubah Motor</h3>
             <form action="#" method="POST">
                 <ul class="list-group">
-                    Brand <input type="text" name="brand" value="Yamaha" required>
-                    Harga <input type="text" name="harga" value="50000000" required>
-                    Gambar <input type="text" name="gambar" value="yamaha.png" required>
+                    Kode Produk <input type="text" name="kodeProduk" value="{{$dataUbah->kode_produk}}" required>
+                    Nama <input type="text" name="nama" value="{{$dataUbah->nama}}" required>
+                    Deskripsi <input type="text" name="desc" value="{{$dataUbah->deskripsi}}" required>
                 </ul>
                 <hr>
                 <a href="{{route('motor.index')}}" class="btn btn-primary">Kembali</a>

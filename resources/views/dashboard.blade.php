@@ -19,7 +19,7 @@
                     <td>{{$product->nama}}</td>
                     <td>{{$product->deskripsi}}</td>
                     <td>
-                        <a href="#" class="btn btn-warning">Edit</a>
+                        <a href="{{route('motor.edit', $product->id)}}" class="btn btn-warning">Edit</a>
                         <input type="button" value="Delete" class="btn btn-danger">
                     </td>
                 </tr>
