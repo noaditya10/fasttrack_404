@@ -29,7 +29,7 @@ Route::get('/kaos', [PageController::class, 'tampil']);
 // Route::get('/kaos', [PageController::class, 'handuk']);
 
 
-Route::get('/yamaha', [PageController::class, 'fyamaha']);
+Route::post('/yamaha', [PageController::class, 'fyamaha']);
 Route::get('/katalog', [PageController::class, 'carousel']);
 // Route::get('/login', [PageController::class, 'login']);
 Route::get('/beranda', [PageController::class, 'home']);
