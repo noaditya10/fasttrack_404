@@ -1,6 +1,6 @@
-@extends('cetakan')
+@extends('layouts.app')
 
-@section('isi_halaman')
+@section('content')
 <h1>Halaman Beranda</h1>
 <input type="button" value="Home" class="btn btn-primary">
 <input type="button" value="Profile" class="btn btn-success">

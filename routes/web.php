@@ -31,7 +31,7 @@ Route::get('/kaos', [PageController::class, 'tampil']);
 
 Route::get('/yamaha', [PageController::class, 'fyamaha']);
 Route::get('/katalog', [PageController::class, 'carousel']);
-Route::get('/login', [PageController::class, 'login']);
+// Route::get('/login', [PageController::class, 'login']);
 Route::get('/beranda', [PageController::class, 'home']);
 Route::get('/dashboard', [PageController::class, 'index']);
 Route::get('/quiz', [PageController::class, 'fQuiz']);
@@ -39,3 +39,7 @@ Route::get('/quiz', [PageController::class, 'fQuiz']);
 // Route::get('/motor/ubah', [MotorController::class, 'edit'])->name('motor.edit');
 
 Route::resource('/motor', (MotorController::class));
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

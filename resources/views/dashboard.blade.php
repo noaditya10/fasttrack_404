@@ -8,20 +8,22 @@
             <a href="{{route("motor.create")}}">Tambah Data Motor</a>
             <table class="table table-bordered table-striped">
                 <tr>
-                    <th>Brand</th>
-                    <th>Harga</th>
-                    <th>Gambar</th>
+                    <th>Kode Produk</th>
+                    <th>Nama</th>
+                    <th>Deskripsi</th>
                     <th>AKSI</th>
                 </tr>
+                @foreach ($products as $product)
                 <tr>
-                    <td>Yamaha</td>
-                    <td>50000000</td>
-                    <td>yamaha.png</td>
+                    <td>{{$product->kode_produk}}</td>
+                    <td>{{$product->nama}}</td>
+                    <td>{{$product->deskripsi}}</td>
                     <td>
                         <a href="#" class="btn btn-warning">Edit</a>
                         <input type="button" value="Delete" class="btn btn-danger">
                     </td>
                 </tr>
+                @endforeach
             </table>
         </div>
     </div>
